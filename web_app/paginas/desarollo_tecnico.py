@@ -41,9 +41,9 @@ st.markdown("""
 
 st.header("🌐 API REST para Inferencia")
 st.markdown("""
-- Se construyó una API con **FastAPI** alojada en `api.py` que permite realizar inferencias vía HTTP.
+- Se construyó una API con **FastAPI** alojada en `app.py` que permite realizar inferencias vía HTTP.
 - La API recibe archivos Excel, ejecuta el preprocesamiento y devuelve predicciones sobre la validez del certificado.
-- Se desplegó exitosamente en la nube usando **Docker + Render**, lista para ser integrada con otras plataformas.
+- Se desplegó exitosamente en la nube usando **Render**, lista para ser integrada con otras plataformas.
 """)
 
 st.header("💻 Interfaz Web con Streamlit")
