@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.set_page_config(layout="wide", page_title="Curso streamlit", page_icon="😎")
+st.set_page_config(layout="wide", page_title="Uell", page_icon="😎")
 
 st.title("Entrgeable uell - Análisis de Incapacidades Médicas")
 

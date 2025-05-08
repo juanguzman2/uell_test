@@ -15,7 +15,7 @@ from data_preprocess import DataCleaner
 
 # Cargar datos
 if "df_incapacidades" not in st.session_state:
-    df = pd.read_excel("../data/raw/Incapacidades_Empresa.xlsx")
+    df = pd.read_excel("data/raw/Incapacidades_Empresa.xlsx")
     st.session_state["df_incapacidades"] = df
 else:
     df = st.session_state["df_incapacidades"]
