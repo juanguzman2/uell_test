@@ -9,3 +9,4 @@ uvicorn
 openpyxl
 plotly
 python-multipart
+xlsxwriter
