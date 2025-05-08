@@ -1,3 +1,5 @@
 env/
 data/
-model/
+mlruns/
+__pycache__/
+mlartifacts/

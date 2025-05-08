@@ -8,13 +8,17 @@ st.title("Entrgeable uell - Análisis de Incapacidades Médicas")
 st.sidebar.success("Menú de navegación")
 
 pages = {
-    "Carga de archivos": [
-        st.Page("paginas/carga_archivos.py", title="Carga de archivos", icon="📤"),
+    # "Carga de archivos": [
+    #     st.Page("paginas/carga_archivos.py", title="Carga de archivos", icon="📤"),
+    #             ],
+    "Resumen Ejecutivo": [
+        st.Page("paginas/visualizacion.py", title="Resumen Ejecutivo", icon="📊"),
                 ],
-    "Análisis de datos": [
-        st.Page("paginas/visualizacion.py", title="Análisis de datos", icon="📊"),
-                ]
-
+    "Pronostico certificados invalidos": [
+        st.Page("paginas/predict.py", title="Pronostico certificados invalidos", icon="🤖"),
+                ],
+    "Desarrollo Técnico": [
+        st.Page("paginas/desarollo_tecnico.py", title="Desarrollo Técnico", icon="📚")]
     }
 
 pg = st.navigation(pages,position="sidebar")
