@@ -6,7 +6,7 @@ import io
 # ====== Configuración de la App ======
 st.title("🧠 Predicción de Certificados Médicos Inválidos")
 st.markdown("""
-Sube un archivo Excel con certificados de incapacidad para identificar automáticamente aquellos que podrían ser inválidos.  
+Sube un archivo Excel o CSV con certificados de incapacidad para identificar automáticamente aquellos que podrían ser inválidos.  
 La predicción se realiza mediante un modelo entrenado previamente alojado en una API.
 """)
 
@@ -14,18 +14,24 @@ La predicción se realiza mediante un modelo entrenado previamente alojado en un
 default_api_url = "https://uell-test.onrender.com/predecir"
 api_url = st.text_input("🔗 URL de la API FastAPI", value=default_api_url)
 
-# ====== Subida de archivo Excel ======
-uploaded_file = st.file_uploader("📤 Sube tu archivo Excel (.xlsx)", type=["xlsx"])
+# ====== Subida de archivo ======
+uploaded_file = st.file_uploader("📤 Sube tu archivo (.xlsx o .csv)", type=["xlsx", "csv"])
 
 # ====== Procesamiento al subir archivo ======
 if uploaded_file:
     with st.spinner("🔄 Procesando archivo y consultando API..."):
         try:
+            # Detectar tipo de archivo
+            if uploaded_file.name.endswith('.csv'):
+                file_type = "text/csv"
+            else:
+                file_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
             files = {
                 "file": (
                     uploaded_file.name,
                     uploaded_file,
-                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    file_type,
                 )
             }
 
@@ -42,7 +48,7 @@ if uploaded_file:
                     st.subheader("📄 Resultados Detallados")
                     st.dataframe(df_resultado, use_container_width=True)
 
-                    # Excel descargable
+                    # Exportar resultados a Excel
                     output = io.BytesIO()
                     with pd.ExcelWriter(output, engine="xlsxwriter") as writer:
                         df_resultado.to_excel(writer, index=False)
