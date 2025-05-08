@@ -4,7 +4,10 @@ import streamlit as st
 st.title("📚 Desarrollo Técnico del Análisis de Incapacidades")
 st.markdown("""
 Esta sección presenta el resumen técnico del desarrollo de la solución implementada para el análisis automatizado de incapacidades médicas.
-""")
+
+El link al repositorio es: [GitHub](https://github.com/juanguzman2/uell_test).
+
+            """)
 
 st.header("⚙️ Proceso de Ingeniería de Datos")
 st.markdown("""
