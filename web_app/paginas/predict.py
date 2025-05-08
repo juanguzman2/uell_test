@@ -11,7 +11,7 @@ La predicción se realiza mediante un modelo entrenado previamente alojado en un
 """)
 
 # ====== Input para la URL de la API ======
-default_api_url = "https://uell-test.onrender.com/predecir"
+api_url = "https://uell-test.onrender.com/predecir"
 
 # ====== Subida de archivo ======
 uploaded_file = st.file_uploader("📤 Sube tu archivo (.xlsx o .csv)", type=["xlsx", "csv"])
