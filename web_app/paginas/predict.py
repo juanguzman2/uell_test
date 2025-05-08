@@ -4,7 +4,6 @@ import requests
 import io
 
 # ====== Configuración de la App ======
-st.set_page_config(page_title="Predicción de Certificados", layout="centered")
 st.title("🧠 Predicción de Certificados Médicos Inválidos")
 st.markdown("""
 Sube un archivo Excel con certificados de incapacidad para identificar automáticamente aquellos que podrían ser inválidos.  
