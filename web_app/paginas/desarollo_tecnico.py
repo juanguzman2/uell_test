@@ -60,9 +60,9 @@ st.markdown("""
 - Las dependencias se controlan vía `requirements.txt`, y el entorno está preparado para ejecutar en local o en la nube.
 """)
 
-st.header("🚀 Mejoras Propuestas y Alineación al Perfil Profesional")
+st.header("🚀 Mejoras Propuestas")
 st.markdown("""
-Este proyecto se puede escalar en los siguientes aspectos::
+Este proyecto se puede escalar en los siguientes aspectos:
 
 ### 💡 Mejora de Alcance Técnico
 - **Integración con plataformas BI**: publicar resultados en dashboards como **Power BI** o **Metabase** vía endpoints o bases de datos conectadas.
