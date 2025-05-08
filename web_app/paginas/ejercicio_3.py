@@ -12,7 +12,7 @@ Para validar certificados médicos de forma **automática, eficiente y escalable
 
 ### 📥 Ingreso del Certificado
 
-Cuando un empleado sube un certificado (foto o PDF) a una app, se generan los siguientes pasos:
+Cuando un Cliente sube un certificado (foto o PDF) a una app, se generan los siguientes pasos:
 - Se **verifica el formato** (PDF, JPG, PNG).
 - El archivo se **almacena de forma segura**, por ejemplo en un bucket S3 cifrado.
 - Se asigna un **ID único** para trazabilidad.
