@@ -75,3 +75,5 @@ if uploaded_file:
 
         except Exception as e:
             st.error(f"❌ No se pudo conectar con la API: {e}")
+
+            

@@ -63,17 +63,6 @@ st.markdown("""
 - Las dependencias se controlan vía `requirements.txt`, y el entorno está preparado para ejecutar en local o en la nube.
 """)
 
-st.header("🚀 Mejoras Propuestas")
-st.markdown("""
-Este proyecto se puede escalar en los siguientes aspectos:
 
-### 💡 Mejora de Alcance Técnico
-- **Integración con plataformas BI**: publicar resultados en dashboards como **Power BI** o **Metabase** vía endpoints o bases de datos conectadas.
-- **Escalabilidad en la nube**: migrar orquestación completa a **AWS/GCP** y programar DAGs con **Airflow** para automatización.
-- **Bases de datos de mayor escala**: usar **PostgreSQL, BigQuery o Spark** para manejar volúmenes más grandes o en tiempo real.
-
-- **Validación productiva**: incluir métricas de drift, monitoreo en tiempo real y reentrenamiento automático.
-
-""")
 
 st.success("📌 Este análisis fue diseñado como una solución escalable, automatizada y alineada a prácticas modernas de MLOps y ciencia de datos.")
