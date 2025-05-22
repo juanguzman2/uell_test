@@ -17,8 +17,8 @@ pages = {
     "Pronostico certificados invalidos": [
         st.Page("paginas/predict.py", title="Pronostico certificados invalidos", icon="🤖"),
                 ],
-    # "Desarrollo Técnico": [
-    #     st.Page("paginas/desarollo_tecnico.py", title="Desarrollo Técnico", icon="📚")],
+    "Desarrollo Técnico": [
+        st.Page("paginas/desarollo_tecnico.py", title="Desarrollo Técnico", icon="📚")],
     # "Ejercicio 2 - Automatización del Reporte": [
     #     st.Page("paginas/ejercicio_2.py", title="Ejercicio 2 - Automatización del Reporte", icon="⚙️"),
     #             ],
